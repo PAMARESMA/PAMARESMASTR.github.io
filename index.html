@@ -14,22 +14,15 @@
             color: #fff;
         }
         .container {
-            max-width: 1200px;
-            margin: 50px auto;
+            max-width: 100%;
+            overflow-x: auto;
             padding: 20px;
-            text-align: center;
-            border-radius: 20px;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
-        }
-        h1 {
-            color: #fff;
-            font-size: 3rem;
-            margin-bottom: 40px;
         }
         .tree {
             display: flex;
             flex-direction: column;
             align-items: center;
+            min-width: 900px; /* Minimum width for horizontal scrolling */
         }
         .level {
             display: flex;
@@ -93,6 +86,20 @@
             to {
                 opacity: 1;
                 transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .tree {
+                min-width: unset;
+            }
+            .level {
+                flex-direction: column;
+                gap: 20px;
+            }
+            .node {
+                min-width: 100%;
+                margin: 10px 0;
             }
         }
     </style>
@@ -167,7 +174,7 @@
             <div class="connector"></div>
             <div class="level">
                 <div class="node">
-                    <img src="UMUM.jpeg"alt="Foto Foreman A">
+                    <img src="UMUM.jpeg alt="Foto Foreman A">
                     <h2>Koordinator Umum</h2>
                     <p>Halim Fiqolbi Salim</p>
                 </div>
