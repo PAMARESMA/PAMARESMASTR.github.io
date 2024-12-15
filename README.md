@@ -1,1 +1,1 @@
-# PAMARESMA.github.io
+# PAMARESMASTRUKTUR.github.io
